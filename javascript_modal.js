@@ -12,7 +12,7 @@ $(".lightbox-link").click(function(e){
     image.attr('src', imageURL);
 
     
-    // centerImage(image);
+    centerImage(image);
 
     $('.lightbox-outer').show();
 
@@ -25,15 +25,15 @@ $(".lightbox-link").click(function(e){
  
 // -------end of code modal----------
 
-// function centerImage(image) {
+function centerImage(image) {
 
-//   image.load(function(){
-//     // var page_height = $(window).height();
-//     var image_height = image.height();
-//     var image_height_offset = ( page_height - image_height ) / 2;
-//     image.parent().css("margin-top", image_height_offset);
-//   });
-// }
+  image.load(function(){
+    // var page_height = $(window).height();
+    var image_height = image.height();
+    var image_height_offset = ( page_height - image_height ) / 2;
+    image.parent().css("margin-top", image_height_offset);
+  });
+}
 
 
 
