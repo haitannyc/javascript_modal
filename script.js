@@ -10,14 +10,15 @@ $(document).ready(function() {
     $('#modalOverlay').hide();
   })
 
-  $('.modalContent').on('click', function(event) {
+// ----cheat to make modal on click
+  // $('.modalContent').on('click', function(event) {
 
-    // display the modal with click
-    $(event.currentTarget).show(); 
+  //   // display the modal with click
+  //   $(event.currentTarget).show(); 
 
-  //use to stop bubbling
-     // event.stopPropagation(); 
-  })
+  // //use to stop bubbling
+  //    // event.stopPropagation(); 
+  // })
 
 
 // close the modal when clicked on
